@@ -4,4 +4,17 @@
     - Adcionar no template de RestaurantDetailComponent o router-outlet e testar a navegação
     - Adcionar no template de RestaurantDetailComponent o link para as abas 'menu' e 'avaliações' com o [routerLink]="['nome_da_rota']" e testar a navegação
     - Adcionar no template de RestaurantDetailComponent a class detail-active para as abas com o routerLinkActive="detail-active" e testar a navegação
-    
+49. O que são pipes?
+    - São recursos do angular que transformam o conteúdo  dos dados
+    - São chamados de filtors em Angular I 
+    - Com eles é possível fazer coisas como: transformar uma string em uppercase; formatar datas, numeros, moedas; limitar o conteudo de um array; formatar um conteudo json
+        Ex: usando pipe json
+        * in component --- user: = { name 'Luke Skywalker', isJedi: true }
+        * in template --- <div>{{ user }}</div>
+        * renderizado --- <div>[object Object]</div>
+        ==> in template --- <div>{{user | json}}</div>
+        ==> renderizado --- <div>{ name: 'Luke Skywalker', isJedi: true }</div>
+        - Este é mais util em dev e não muito em produção
+        - Pipes aceitam parametros poprios e podem ser agrupados ate se chegar no resultado desejado
+50.  Implementando o Componente de Avaliações - Pipes date e async
+    - Usar pipe async para iterar o ngFor --- *ngFor="let review of reviews | async"
