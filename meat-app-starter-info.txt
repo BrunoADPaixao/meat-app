@@ -1,3 +1,5 @@
+.. Instalar o a biblioteca server-json do npm para servir a API
+    - Startar o server-json --- $ server-json db.json
 48. Rotas filhas para avaliações e menu
     - rotas de navegações filhas: childen
     - {path: '', redirectTo: 'menu', pathMatch: 'full'}, --- define a rota padrão para restaurants/{id/menu} (redirecionando)
@@ -18,3 +20,8 @@
         - Pipes aceitam parametros poprios e podem ser agrupados ate se chegar no resultado desejado
 50.  Implementando o Componente de Avaliações - Pipes date e async
     - Usar pipe async para iterar o ngFor --- *ngFor="let review of reviews | async"
+51. Implementando os Itens de Menu - Pipe Currency
+    -  Criaremos um evento ao clicar: toda vez que alguem clicar em 'Adicionar' item no menu uma ação será realizada
+    - Construir o componente item do menu e mostrar a lista de todos eles no seu componente pai -> menu:
+        - Fazer o template do item do menu
+        - No componente item do menu: criar uma propriedade que represente um item do men, passar os itens do menu do componente pai -> menu (que vem da API json) para o nosso componente e para assim todos serem renderizados como devido.
