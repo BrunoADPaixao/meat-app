@@ -1,0 +1,7 @@
+48. Rotas filhas para avaliações e menu
+    - rotas de navegações filhas: childen
+    - {path: '', redirectTo: 'menu', pathMatch: 'full'}, --- define a rota padrão para restaurants/{id/menu} (redirecionando)
+    - Adcionar no template de RestaurantDetailComponent o router-outlet e testar a navegação
+    - Adcionar no template de RestaurantDetailComponent o link para as abas 'menu' e 'avaliações' com o [routerLink]="['nome_da_rota']" e testar a navegação
+    - Adcionar no template de RestaurantDetailComponent a class detail-active para as abas com o routerLinkActive="detail-active" e testar a navegação
+    
