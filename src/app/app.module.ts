@@ -13,8 +13,9 @@ import { RestaurantsComponent } from './restaurants/restaurants.component';
 import { RestaurantComponent } from './restaurants/restaurant/restaurant.component'
 import { RestaurantsService } from './restaurants/restaurants.service';
 import { RestaurantDetailComponent } from './restaurant-detail/restaurant-detail.component';
-import { MenuComponent } from './restaurant-detail/src/app/restaurant-detail/menu/menu.component';
-import { ShoppingCartComponent } from './restaurant-detail/src/app/restaurant-detail/shopping-cart/shopping-cart.component';
+import { MenuComponent } from './restaurant-detail/menu/menu.component';
+import { ShoppingCartComponent } from './restaurant-detail/shopping-cart/shopping-cart.component';
+import { MenuItemComponent } from './restaurant-detail/menu-item/menu-item.component';
 
 {RestaurantsService}
 
@@ -28,7 +29,8 @@ import { ShoppingCartComponent } from './restaurant-detail/src/app/restaurant-de
     RestaurantComponent,
     RestaurantDetailComponent,
     MenuComponent,
-    ShoppingCartComponent
+    ShoppingCartComponent,
+    MenuItemComponent
   ],
   imports: [
     BrowserModule,
